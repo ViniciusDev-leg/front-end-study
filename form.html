@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Site 001</title>
+</head>
+    <form action="*" method="post">
+        <h1>Sua pizza</h1>
+        <fieldset id = "sabor">
+            <legend>Sabor</legend>
+            <select name="role">
+                <option selected value="">Selecione o sabor</option>
+                <option value="Calabresa">Calabresa</option>
+                <option value="Portuguesa">Portuguesa</option>
+                <option value="Queijo">Queijo</option>
+                <option value="Frango">Frango</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Adicionais</legend>
+            <input type="checkbox" name="adicional[]" value="calabresa"> + calabresa <br>
+            <input type="checkbox" name="adicional[]" value="cebola"> + cebola <br>
+            <input type="checkbox" name="adicional[]" value="azeitona"> + azeitona
+        </fieldset>
+        <fieldset>
+            <legend>Borda recheada</legend>
+            <input type="radio" name="borda recheada" value="s">Sim <br>
+            <input type="radio" name="borda recheada" value="n">Não <br>
+        </fieldset>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
